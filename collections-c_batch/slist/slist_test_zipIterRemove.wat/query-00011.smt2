@@ -1,3 +1,4 @@
+; unsat
 (declare-fun h i32)
 (declare-fun i i32)
 (declare-fun a i32)

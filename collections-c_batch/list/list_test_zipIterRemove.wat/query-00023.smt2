@@ -1,3 +1,4 @@
+; sat
 (declare-fun a i32)
 (declare-fun c i32)
 (declare-fun d i32)
