@@ -1,7 +1,7 @@
 ; sat
-(declare-fun a i32)
-(declare-fun b i32)
-(declare-fun c i32)
+(let-const a i32)
+(let-const b i32)
+(let-const c i32)
 (assert (i32.eq c (i32 0)))
 (assert (bool.not (i32.eq b (i32 0))))
 (assert (bool.not (i32.eq a (i32 0))))

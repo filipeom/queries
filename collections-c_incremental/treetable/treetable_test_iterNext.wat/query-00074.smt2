@@ -1,8 +1,8 @@
 ; unsat
-(declare-fun w i32)
-(declare-fun x i32)
-(declare-fun y i32)
-(declare-fun z i32)
+(let-const w i32)
+(let-const x i32)
+(let-const y i32)
+(let-const z i32)
 (assert (i32.eq (i32.and (i32.of_bool (i32.eq z z)) (i32 1)) (i32 0)))
 (assert (i32.eq (i32.and (i32.of_bool (i32.eq z y)) (i32 1)) (i32 0)))
 (assert (i32.eq (i32.and (i32.of_bool (i32.eq z x)) (i32 1)) (i32 0)))

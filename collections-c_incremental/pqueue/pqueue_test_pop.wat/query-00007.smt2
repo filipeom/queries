@@ -1,6 +1,6 @@
 ; sat
-(declare-fun x i32)
-(declare-fun y i32)
+(let-const x i32)
+(let-const y i32)
 (assert (i32.eq (i32.and (i32.of_bool (i32.lt_s y (i32 8388608))) (i32 1)) (i32 0)))
 (assert (i32.to_bool (i32.and (i32.of_bool (i32.gt_s x (i32 -8388608))) (i32 1))))
 (assert (bool.not (i32.eq (i32.and (i32.of_bool (i32.lt_s x (i32 8388608))) (i32 1)) (i32 0))))

@@ -1,7 +1,7 @@
 ; sat
-(declare-fun d i32)
-(declare-fun e i32)
-(declare-fun f i32)
+(let-const d i32)
+(let-const e i32)
+(let-const f i32)
 (assert (bool.not (i32.to_bool (i32.and (i32.of_bool (i32.le_s f (i32 3))) (i32 1)))))
 (assert (bool.not (i32.to_bool (i32.and (i32.of_bool (i32.le_s e (i32 3))) (i32 1)))))
 (assert (bool.not (i32.to_bool (i32.and (i32.of_bool (i32.le_s d (i32 3))) (i32 1)))))

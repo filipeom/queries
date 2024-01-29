@@ -1,6 +1,6 @@
 ; sat
-(declare-fun a i32)
-(declare-fun b i32)
+(let-const a i32)
+(let-const b i32)
 (assert (bool.not (i32.eq (i32.and (i32.of_bool (i32.eq b a)) (i32 1)) (i32 0))))
 (assert (i32.eq (i32.and (i32.of_bool (i32.lt_s b a)) (i32 1)) (i32 0)))
 (assert (i32.to_bool (i32.and (i32.of_bool (i32.ne (i32.add (i32 66688) (i32 0)) (i32 0))) (i32 1))))

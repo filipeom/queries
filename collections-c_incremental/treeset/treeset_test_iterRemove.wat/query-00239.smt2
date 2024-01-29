@@ -1,7 +1,7 @@
 ; unsat
-(declare-fun a i32)
-(declare-fun c i32)
-(declare-fun b i32)
+(let-const a i32)
+(let-const c i32)
+(let-const b i32)
 (assert (bool.not (i32.eq (i32.and (i32.of_bool (i32.eq (i32.add (i32 66696) (i32 0)) (i32 0))) (i32 1)) (i32 0))))
 (assert (i32.eq (i32.and (i32.of_bool (i32.eq (i32.add (i32 66696) (i32 0)) (i32.add (i32 66624) (i32 0)))) (i32 1)) (i32 0)))
 (assert (bool.not (i32.eq (i32.and (i32.of_bool (i32.eq (i32.add (i32 66672) (i32 0)) (i32.add (i32 66672) (i32 0)))) (i32 1)) (i32 0))))

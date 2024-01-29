@@ -1,6 +1,6 @@
 ; unsat
-(declare-fun e i32)
-(declare-fun f i32)
+(let-const e i32)
+(let-const f i32)
 (assert (bool.not (i32.to_bool (i32.and (i32.of_bool (i32.eq f f)) (i32 1)))))
 (assert (bool.not (i32.eq (i32.and (i32.of_bool (i32.le_s e f)) (i32 1)) (i32 0))))
 (assert (i32.eq (i32.and (i32.of_bool (i32.gt_s e f)) (i32 1)) (i32 0)))

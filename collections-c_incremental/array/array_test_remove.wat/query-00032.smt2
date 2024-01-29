@@ -1,5 +1,5 @@
 ; unsat
-(declare-fun n i32)
+(let-const n i32)
 (assert (bool.not (i32.eq (i32.and (i32.of_bool (i32.eq (i32.add (i32 66636) (i32 0)) (i32.add (i32 66652) (i32 0)))) (i32 1)) (i32 0))))
 (assert (i32.eq (i32.and (i32.of_bool (i32.lt_s (i32 6) n)) (i32 1)) (i32 0)))
 (assert (bool.not (i32.eq (i32.and (i32.of_bool (i32.lt_s (i32 5) n)) (i32 1)) (i32 0))))

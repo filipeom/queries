@@ -1,8 +1,8 @@
 ; sat
-(declare-fun d i32)
-(declare-fun a i32)
-(declare-fun b i32)
-(declare-fun c i32)
+(let-const d i32)
+(let-const a i32)
+(let-const b i32)
+(let-const c i32)
 (assert (i32.eq (i32.and (i32.of_bool (i32.ne c b)) (i32 1)) (i32 0)))
 (assert (bool.not (i32.eq (i32.and (i32.of_bool (i32.ne a d)) (i32 1)) (i32 0))))
 (assert (bool.not (i32.eq (i32.and (i32.of_bool (i32.ne a c)) (i32 1)) (i32 0))))
